@@ -11,14 +11,19 @@
         <h2>Temporizador</h2>
     </div>
     <script>
-       var app = document
+        function disparaAlerta() {
+            var app = document
        .querySelector('#app');
 
+        texto = app.textContent;
+        alert(texto)
+      
+        }
 
-       texto = app.textContent;
-       setInterval(() => {
-           alert(texto)
-       }, 5000);
+        setInterval(disparaAlerta, 5000);
+      
+
+       
     </script>
 </body>
 </html>
